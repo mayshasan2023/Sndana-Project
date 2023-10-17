@@ -1,0 +1,55 @@
+.hero {
+  background-image: url('/src/assets/heroPhoto2.jpg');
+  /* 50% no-repeat */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+
+  text-align: center;
+  color: #fff;
+  /* display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center   */
+}
+
+.hero-content {
+  background-color: rgba(104, 99, 99, 0.7); 
+  padding: 20px;
+  border-radius: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #425D37;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #FEFFFE;
+}
+
+.hero button:hover {
+  background-color: #AABA8F; 
+}

@@ -1,0 +1,17 @@
+.but-card {
+  color: #425D37;
+}
+.buttos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.buttos-btn {
+  background-color: #425D37;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #FEFFFE;
+}

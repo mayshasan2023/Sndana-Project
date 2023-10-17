@@ -1,0 +1,44 @@
+.navContainer {
+  background-color: #E7EBE0;
+  /* background-size: cover; */
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1rem 5rem;
+
+}
+.btn-sup {
+  background-color: #D87945;
+  height: 3rem;
+  width: 10rem;
+  color: #0D0D0D;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-lg {
+  height: 3rem;
+  width: 10rem;
+  color: #0D0D0D;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid #D87945;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkClass {
+  color: #0D0D0D;
+  width: fit-content;
+  padding: 1rem;
+  text-decoration: none;
+
+}

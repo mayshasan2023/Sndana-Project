@@ -1,0 +1,9 @@
+.search-style {
+  width: 20vw;
+  height: 2rem;
+  padding: 0.1rem;
+  text-align: center;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
