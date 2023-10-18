@@ -12,7 +12,7 @@ const Navbar = () => {
       <button type="button" className="btn-lg">
         تسجيل الدخول
       </button>
-      <Link className="linkClass" to="/Home">
+      <Link className="linkClass" to="/">
         {" "}
         الرئيسية
       </Link>

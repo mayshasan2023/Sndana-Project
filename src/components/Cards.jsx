@@ -4,6 +4,7 @@ import "../styles/button.css";
 import alarmclock from "../assets/alarmclock.png";
 import view from "../assets/view.png";
 import heart from "../assets/heart.png";
+import { Link } from "react-router-dom";
 export const Cards = ({ imgSrc, imgAlt, title }) => {
   return (
     <div className="card-container">
@@ -11,7 +12,7 @@ export const Cards = ({ imgSrc, imgAlt, title }) => {
         <img src={imgSrc} alt={imgAlt} className="cardImg" />
       )}
       <div className="card-container-heart">
-        <img src={heart} height={30} alt="heart"/>
+        <img src={heart} height={30} alt="heart" />
       </div>
 
       {title && <h3 className="card-title">{title}</h3>}
@@ -20,13 +21,11 @@ export const Cards = ({ imgSrc, imgAlt, title }) => {
         <div className="al-btn">
           <div className="view-icon"></div>
           <div className="al-bb">
-            <a href="/Details/Details-continer">
+            <Link to={"/Details/Details-continer"}>
               <button className="buttos-btn">
-              <img src={view} height={30} alt="view"/>
-                {" "}
-                 عرض التفاصيل
+                <img src={view} height={30} alt="view" /> عرض التفاصيل
               </button>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -34,9 +33,7 @@ export const Cards = ({ imgSrc, imgAlt, title }) => {
           <div className="alarm-icon"></div>
           <div className="al-bb">
             <button className="buttos-btn">
-            <img src={alarmclock} height={25} alt="alarmclock"/>
-              {" "}
-              اضافة منبه
+              <img src={alarmclock} height={25} alt="alarmclock" /> اضافة منبه
             </button>
           </div>
         </div>
