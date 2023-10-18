@@ -1,5 +1,5 @@
 .search-style {
-  width: 20vw;
+  width: 100%;
   height: 2rem;
   padding: 0.1rem;
   text-align: center;
@@ -11,5 +11,10 @@
 }
 .search-container-search{
   position: absolute;
-left: 29rem;
+  right: 1rem;
+  z-index: 50;
+}
+.search-container{
+  position: relative;
+  width: 20rem;
 }

@@ -22,14 +22,14 @@ const SearchBox = () => {
   }
 
   return (
-    <div>
+    <div className="search-container">
       <input
         className="search-style"
         type="search"
         placeholder="..ابحث عن النبتة التي تريدها"
         onChange={handleChange}
         value={searchInput}
-        />
+      />
         <img className="search-container-search" src={search} height={30} alt="search" />
 
     </div>

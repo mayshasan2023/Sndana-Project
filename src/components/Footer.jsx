@@ -30,7 +30,7 @@ const Footer = () => {
       <div className="footer-ph-cinter">
         {<Logo />}
         <br />
-        <p> © الحقوق محفوظة لصالح موقع سندانة</p>
+        <p> © 2023 الحقوق محفوظة لصالح موقع سندانة</p>
       </div>
 
       <div className="footer-ph-right">
