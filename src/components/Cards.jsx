@@ -22,9 +22,9 @@ export const Cards = ({ imgSrc, imgAlt, title }) => {
           <div className="al-bb">
             <a href="/Details/Details-continer">
               <button className="buttos-btn">
+              <img src={view} height={30} alt="view"/>
                 {" "}
-                <img src={view} height={30} alt="view"></img>
-                عرض التفاصيل
+                 عرض التفاصيل
               </button>
             </a>
           </div>
@@ -34,8 +34,8 @@ export const Cards = ({ imgSrc, imgAlt, title }) => {
           <div className="alarm-icon"></div>
           <div className="al-bb">
             <button className="buttos-btn">
+            <img src={alarmclock} height={25} alt="alarmclock"/>
               {" "}
-              <img src={alarmclock} height={38} alt="alarmclock"></img>
               اضافة منبه
             </button>
           </div>

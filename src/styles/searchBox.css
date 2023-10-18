@@ -6,4 +6,10 @@
   border-radius: 1rem;
   outline: none;
   border: none;
+  position: relative;
+
+}
+.search-container-search{
+  position: absolute;
+left: 29rem;
 }

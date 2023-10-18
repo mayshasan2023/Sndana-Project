@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import '../styles/searchBox.css';
+import "../styles/searchBox.css";
+import search from "../assets/search.png";
 const SearchBox = () => {
   const [searchInput, setSearchInput] = useState("");
 
@@ -21,13 +22,16 @@ const SearchBox = () => {
   }
 
   return (
-    <div >
-      <input className="search-style"
+    <div>
+      <input
+        className="search-style"
         type="search"
         placeholder="..ابحث عن النبتة التي تريدها"
         onChange={handleChange}
         value={searchInput}
-      />
+        />
+        <img className="search-container-search" src={search} height={30} alt="search" />
+
     </div>
   );
 };

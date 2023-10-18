@@ -5,6 +5,10 @@ import sun from "../assets/sun.png";
 import CustomTabPanel from "../components/CustomTabPanel";
 import "../styles/details.css";
 import "../styles/button.css";
+import alarmclock from "../assets/alarmclock.png";
+import heart2 from "../assets/heart2.png";
+import sent from "../assets/sent.png";
+
 const Details = () => {
   return (
     <div id="Details-continer" className="Details-continer">
@@ -67,14 +71,25 @@ const Details = () => {
               <h6 className="tx-class">مرة كل يومين</h6>
             </div>
             <div className="text-side-icons-details"></div>
-            <div className="text-under-icons-details">
-            </div>
+            <div className="text-under-icons-details"></div>
           </div>
 
           <div className="buttos-details">
-            <button className="buttos-btn"> مشاركة</button>
-            <button className="buttos-btn"> اضافة المفضلة</button>
-            <button className="buttos-btn"> اضافة منبه</button>
+            <button className="buttos-btn">
+            <img src={sent} height={25} alt="sent" />
+              {" "}
+              مشاركة
+            </button>
+            <button className="buttos-btn">
+            <img src={heart2} height={30} alt="heart2" />
+              {" "}
+              اضافة المفضلة
+            </button>
+            <button className="buttos-btn">
+            <img src={alarmclock} height={25} alt="alarmclock" />
+              {" "}
+              اضافة منبه
+            </button>
           </div>
         </div>
       </div>

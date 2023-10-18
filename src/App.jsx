@@ -9,7 +9,7 @@ import Details from './pages/Details'
 function App() {
   return (
     <div classname='App'>
-    <Navbar/>
+    <Navbar sticky="top"/>
      <Routes> 
         <Route path="/Home" element={<Home />}></Route>
         <Route path="/Favorites" element={<Favorites />}></Route> 
