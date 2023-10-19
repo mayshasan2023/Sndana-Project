@@ -16,3 +16,7 @@
   padding: 0.5rem 1rem;
   color: #FEFFFE;
 }
+.buttos-btn:hover {
+  background-color: #AABA8F; 
+  color: #395230;
+}

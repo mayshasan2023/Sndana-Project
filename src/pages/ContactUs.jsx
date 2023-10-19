@@ -7,7 +7,6 @@ const ContactUs = () => {
       <Routes>
         <Route path="/Footer"></Route>
       </Routes>
-
     </div>
   );
 };

@@ -35,8 +35,6 @@ const Footer = () => {
 
       <div className="footer-ph-right">
         <p>الشروط والاحكام </p>
-        <br />
-        <p>من نحن؟ </p>
       </div>
     </footer>
   );

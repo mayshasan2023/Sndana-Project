@@ -9,7 +9,7 @@ import Details from "./pages/Details";
 function App() {
   return (
     <div classname="App">
-      <Navbar sticky="top" />
+      <Navbar />
       <Routes>
         <Route path="/Details/:id" element={<Details />} />
         <Route path="/Favorites" element={<Favorites />} />
