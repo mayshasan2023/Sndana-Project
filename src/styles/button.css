@@ -19,4 +19,6 @@
 .buttos-btn:hover {
   background-color: #AABA8F; 
   color: #395230;
+  border: 1px solid #425D37;
+
 }
