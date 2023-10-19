@@ -8,7 +8,7 @@
   height: fit-content;
   display: flex;
   flex-direction: row-reverse;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
   overflow-x: scroll;
   justify-content: space-around;
