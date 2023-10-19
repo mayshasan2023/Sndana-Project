@@ -24,6 +24,9 @@
   justify-content: center;
   align-items: center;
 }
+.btn-sup:hover{
+  background-color: #ED9360;
+}
 .btn-lg {
   height: 3rem;
   width: 10rem;
@@ -37,11 +40,18 @@
   justify-content: center;
   align-items: center;
 }
+.btn-lg:hover{
+  background-color: #ffffff;
+
+}
 .linkClass {
   color: #0D0D0D;
   width: fit-content;
   padding: 1rem;
   text-decoration: none;
+}
+.linkClass:hover{
+  color: #D87945;
 }
 #hamburger-nav {
   display: none;

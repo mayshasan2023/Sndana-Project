@@ -1,0 +1,5 @@
+.logo-img:hover{
+  transform: rotate(45deg);
+  transition: 2s;
+
+}
