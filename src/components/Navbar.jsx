@@ -5,14 +5,14 @@ import SearchBox from "./SearchBox";
 import "../styles/navbar.css";
 const Navbar = () => {
   return (
-    <>
+    <div>
       <nav id="desktop-nav" className="navContainer">
-        <button type="button" className="btn-sup">
+        {/* <button type="button" className="btn-sup">
           انشاء حساب
         </button>
         <button type="button" className="btn-lg">
           تسجيل الدخول
-        </button>
+        </button> */}
         <Link className="linkClass" to="/">
           {" "}
           الرئيسية
@@ -43,13 +43,11 @@ const Navbar = () => {
             <SearchBox />
             <li>
               <Link className="linkClass" to="/">
-                {" "}
                 الرئيسية
               </Link>
             </li>
             <li>
               <Link className="linkClass" to="/Favorites">
-                {" "}
                 المفضلات
               </Link>
             </li>
@@ -58,16 +56,16 @@ const Navbar = () => {
                 تواصل معنا
               </a>
             </li>
-            <button type="button" className="btn-sup">
+            {/* <button type="button" className="btn-sup">
               انشاء حساب
             </button>
             <button type="button" className="btn-lg">
               تسجيل الدخول
-            </button>
+            </button> */}
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

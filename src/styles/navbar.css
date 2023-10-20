@@ -5,13 +5,12 @@
   flex-direction: row-reverse;
   width: 100vw;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0.1rem 5rem;
-  position: sticky; 
-  top: 0;
-  z-index: 50;
+
 }
-.btn-sup {
+
+/* .btn-sup {
   background-color: #D87945;
   height: 3rem;
   width: 10rem;
@@ -26,8 +25,8 @@
 }
 .btn-sup:hover{
   background-color: #ED9360;
-}
-.btn-lg {
+} */
+/* .btn-lg {
   height: 3rem;
   width: 10rem;
   color: #0D0D0D;
@@ -43,20 +42,26 @@
 .btn-lg:hover{
   background-color: #ffffff;
 
-}
+} */
 .linkClass {
   color: #0D0D0D;
   width: fit-content;
   padding: 1rem;
   text-decoration: none;
 }
-.linkClass:hover{
+
+.linkClass:hover {
   color: #D87945;
 }
+
 #hamburger-nav {
   display: none;
 }
+
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }

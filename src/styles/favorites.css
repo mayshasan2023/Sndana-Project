@@ -1,7 +1,7 @@
 .text-Favorites {
   display: flex;
   flex-direction: row-reverse;
-  padding: 1rem;
+  padding:1rem 6rem;
 }
 .Fav-continer{
   display: flex;
@@ -11,6 +11,6 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   scroll-margin-bottom: 20px;
 }

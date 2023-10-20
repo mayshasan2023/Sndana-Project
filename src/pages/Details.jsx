@@ -5,9 +5,9 @@ import sun from "../assets/sun.png";
 import CustomTabPanel from "../components/CustomTabPanel";
 import "../styles/details.css";
 import "../styles/button.css";
-import alarmclock from "../assets/alarmclock.png";
 import heart2 from "../assets/heart2.png";
 import sent from "../assets/sent.png";
+import Alarm from "../components/Alarm";
 
 const Details = () => {
   return (
@@ -85,11 +85,7 @@ const Details = () => {
               {" "}
               اضافة المفضلة
             </button>
-            <button className="buttos-btn">
-            <img src={alarmclock} height={25} alt="alarmclock" />
-              {" "}
-              اضافة منبه
-            </button>
+            <Alarm/>
           </div>
         </div>
       </div>

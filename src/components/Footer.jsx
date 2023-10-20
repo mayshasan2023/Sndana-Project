@@ -28,13 +28,11 @@ const Footer = () => {
       </div>
 
       <div className="footer-ph-cinter">
-        {<Logo />}
-        <br />
         <p> © 2023 الحقوق محفوظة لصالح موقع سندانة</p>
       </div>
 
       <div className="footer-ph-right">
-        <p>الشروط والاحكام </p>
+      {<Logo />}
       </div>
     </footer>
   );

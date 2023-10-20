@@ -87,3 +87,8 @@
   top: 1.5rem;
   right: 1.5rem;
 }
+.heart-btn-style{
+  border: none;
+  background-color: transparent;
+
+}

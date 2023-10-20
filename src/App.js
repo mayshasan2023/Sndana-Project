@@ -9,13 +9,13 @@ import Details from "./pages/Details";
 function App() {
   return (
     <div classname="App">
-      <Navbar />
+      <Navbar sticky="top" />
       <Routes>
         <Route path="/Details/:id" element={<Details />} />
         <Route path="/Favorites" element={<Favorites />} />
         <Route path="/" element={<Home />} />
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   );
 }
