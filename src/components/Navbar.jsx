@@ -19,32 +19,7 @@ const Navbar = () => {
           <Logo />
         </div>
       </nav>
-      <nav id="hamburger-nav">
-        <div class="logo">
-          <Logo />
-        </div>
-        <div class="hamburger-menu">
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="menu-links">
-            <SearchBox />
-            <li>
-              <Link className="linkClass" to="/">
-                الرئيسية
-              </Link>
-            </li>
-            
-            <li>
-              <a href="#Footer" className="linkClass">
-                تواصل معنا
-              </a>
-            </li>
-          </div>
-        </div>
-      </nav>
+      
     </div>
   );
 };

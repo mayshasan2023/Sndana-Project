@@ -77,6 +77,7 @@ export default function App() {
   ]);
   const [query, setQuery] = useState("");
   const [filteredList, setFilteredList] = useState([]);
+
   useEffect(() => {
     if (query !== "") {
       let newArray = itemList.filter((item) => item.plantName.includes(query));
@@ -96,8 +97,9 @@ export default function App() {
       </div>
       {filteredList ? (
         <div id="item-list" >
+
           {filteredList.map((item, index) => (
-            <Link to={`/Details/${item?.idPlant}`} className="search-bar">
+            <Link onClick={()=>setFilteredList([])} to={`/Details/${item?.idPlant}`} className="search-bar">
               <div key={index}>
                 <p>{item?.plantName}</p>
               </div>
