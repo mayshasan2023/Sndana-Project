@@ -97,7 +97,7 @@ export default function App() {
       {filteredList ? (
         <div id="item-list" >
           {filteredList.map((item, index) => (
-            <Link to={`/Details/${item?.idPlant}`}>
+            <Link to={`/Details/${item?.idPlant}`} className="search-bar">
               <div key={index}>
                 <p>{item?.plantName}</p>
               </div>

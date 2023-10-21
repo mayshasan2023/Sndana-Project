@@ -6,7 +6,7 @@ import "../styles/navbar.css";
 const Navbar = () => {
   return (
     <div>
-      <nav id="desktop-nav" className="navContainer">
+      <nav  className="navContainer">
         <Link className="linkClass" to="/">
           الرئيسية
         </Link>
