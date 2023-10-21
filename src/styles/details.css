@@ -66,7 +66,7 @@ h6 .text-side-icons-details {
   display: flex;
   flex-direction: row-reverse;
   align-items: end;
-  gap: 1rem;
+  gap: 10rem;
   width:fit-content;
   border-radius: 1rem 1rem;
   outline: none;

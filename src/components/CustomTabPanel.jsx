@@ -47,17 +47,18 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%"  ,  display: "flex",
+    flexdirection: "row-reverse"}}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs value={value} onChange={handleChange}>
-          <Tab label="الوصف" {...a11yProps(0)} />
-          <Tab label="التكاثر" {...a11yProps(1)} />
+          <Tab label="التسميد" {...a11yProps(0)} />
+          <Tab label="الحل" {...a11yProps(1)} />
           <Tab label="المشاكل" {...a11yProps(2)} />
-          <Tab label="الحلول" {...a11yProps(3)} />
-          <Tab label="التسميد" {...a11yProps(4)} />
+          <Tab label="التكاثر" {...a11yProps(3)} />
+          <Tab label="الوصف" {...a11yProps(4)} />
         </Tabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel value={value} index={4}>
         شجيرة صغيرة معمرة، مستديمة الخضرة، ترتفع حتى 3 م. الساق قاسية ومتفرعة،
         والأوراق خضراء غامقة بيضاوية متقابلة، والأزهار متجمعة قمية بيضاء ناصعة
         تظهر في الربيع وحتى آواخر الخريف، والثمار صغيرة الحسلة لا تظهر كثيراً،
@@ -71,7 +72,7 @@ export default function BasicTabs() {
         التربة اللومية الغنية الجيدة الصرف ومعرضة للإصابة بالحشرات القشرية والبق
         الدقيقي والذباب الأبيض
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
+      <CustomTabPanel value={value} index={3}>
         تحت ظروف البيت الزجاجي الرطب والدافيء في أو آخر الشتاء. القيمة التنسيقية
         تستخدم للزينة في الحدائق والشرفات لأزهارها ذات الشكل الجميل والرائحة
         الطيبة
@@ -82,12 +83,12 @@ export default function BasicTabs() {
         حشرة الدعسوقة أو بنت المطر (Lady Bird أو Lady Bug) والحرص على الري
         المنتظم دون إغراق يجنب النبتة الإصابة بالعفن في الأوراق
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={3}>
+      <CustomTabPanel value={value} index={1}>
         الحل في استخدام مبيد فطري مع أخذ كافة الاحتياطات بلبس القفاز والكمام
         وابعاد المبيد عن الأطفال والرش خارج المنزل. أو استخدام أحد المبيدات
         الطبيعية
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={4}>
+      <CustomTabPanel value={value} index={0}>
         سماد نباتات الزينة التي اشتريتها حديثاً والتي زرعتها حديثاً في تربة
         جديدة في الغالب غير ضروري لمدة قد تصل إلى ثلاثة أشهر، لكنها بعد ذلك
         تحتاجه بشكل منتظم؛ لأنها تعيش في بيئة ليست بيئتها الأصلية، فهي بيئة

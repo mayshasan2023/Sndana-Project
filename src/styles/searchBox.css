@@ -18,14 +18,10 @@
   display: flex;
 }
 
-/* .search-container-search{
-  position: absolute;
-  left: 20rem;
-  z-index: 50;
-} */
 .search-container {
   position: relative;
   width: 20rem;
+
 }
 
 .search-text {
@@ -37,5 +33,16 @@
 }
 
 #item-list {
-  text-align: center;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #E7EBE0;
+  top: 2.5rem;
+  left: 1%;
+  z-index: 10;
+  width: 20rem;
+  text-decoration: none;
+  color: #0D0D0D;
 }

@@ -1,116 +1,112 @@
-// import React from "react";
-// import { useState } from "react";
-// import "../styles/searchBox.css";
-// // import search from "../assets/search.png";
-// const SearchBox = () => {
-//   const itemList = [
-//       "الفل",
-//       "الكاردينيا",
-//       "اكاسيا",
-//       "العمود الفقري",
-//       "ساق البامبو",
-//       "عين القط",
-//       "الجوري",
-//       "اللبلاب",
-//       "جهنمية",
-//       "جلد النمر"
-//     ];
-//     const [filteredList, setFilteredList] = new useState(itemList);
-//     const filterBySearch = (event) => {
-//       const query = event.target.value;
-//       var updatedList = [...itemList];
-//       updatedList = updatedList.filter((item) =>
-//         return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-//       });
-//       setFilteredList(updatedList);
-//     };
-
-//   // const handleChange = (e) => {
-//   //   e.preventDefault();
-//   //   setSearchInput(e.target.value);
-//   // };
-
-//   // if (searchInput.length > 0) {
-//   //   countries.filter((country) => {
-//   //     return country.name.match(searchInput);
-//   //   });
-//   // }
-
-//   return (
-//     <div className="search-container">
-//       <div className="search-header">
-//         <input id="search-box" className="search-style" onChange={filterBySearch} />
-//       </div>
-//       <div id="item-list">
-//         <ol>
-//           {filteredList.map((item, index) => (
-//             <li key={index}>{item}</li>
-//           ))}
-//         </ol>
-//       </div>
-//     </div>
-//   );
-//   // return (
-//   //   <div className="search-container">
-//   //     <input
-//   //       className="search-style"
-//   //       type="search"
-//   //       placeholder="..ابحث عن النبتة التي تريدها"
-//   //       onChange={handleChange}
-//   //       value={searchInput}
-//   //     />
-//   //       {/* <img className="search-container-search" src={search} height={30} alt="search" /> */}
-
-//   //   </div>
-//   // );
-// };
-
-// export default SearchBox;
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/searchBox.css";
-
+import { Link } from "react-router-dom";
 export default function App() {
-  const itemList = [
-    "الفل",
-    "الكاردينيا",
-    "اكاسيا",
-    "العمود الفقري",
-    "ساق البامبو",
-    "عين القط",
-    "الجوري",
-    "اللبلاب",
-    "جهنمية",
-    "جلد النمر",
-  ];
-
-  const [filteredList, setFilteredList] = new useState(itemList);
-
-  const filterBySearch = (event) => {
-    const query = event.target.value;
-    var updatedList = [...itemList];
-    updatedList = updatedList.filter((item) => {
-      return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-    });
-    setFilteredList(updatedList);
-  };
-
+  const [itemList, setItemList] = useState([
+    {
+      idPlant: 1,
+      plantName: "زهرة القمر",
+    },
+    {
+      idPlant: 2,
+      plantName: "العمود الفقري",
+    },
+    {
+      idPlant: 3,
+      plantName: "ساق البامبو",
+    },
+    {
+      idPlant: 4,
+      plantName: "جلد النمر",
+    },
+    {
+      idPlant: 5,
+      plantName: "اللبلاب",
+    },
+    {
+      idPlant: 6,
+      plantName: "الدفنباخية",
+    },
+    {
+      idPlant: 7,
+      plantName: "زنبق السلام",
+    },
+    {
+      idPlant: 8,
+      plantName: "الفلانجيوم",
+    },
+    {
+      idPlant: 11,
+      plantName: "المفصصة الريشية",
+    },
+    {
+      idPlant: 12,
+      plantName: "الخنشار",
+    },
+    {
+      idPlant: 17,
+      plantName: "ورد الفل",
+    },
+    {
+      idPlant: 18,
+      plantName: "ورد الجوري",
+    },  {
+      idPlant: 19,
+      plantName: "زهرة الشمس",
+    },
+    {
+      idPlant: 20,
+      plantName: "جهنمية",
+    },
+    {
+      idPlant: 21,
+      plantName: "عين القط",
+    },
+    {
+      idPlant: 22,
+      plantName: "اكاسيا",
+    },
+    {
+      idPlant: 23,
+      plantName: "لويزة",
+    },
+    {
+      idPlant: 24,
+      plantName: "بلومباجو",
+    },
+  ]);
+  const [query, setQuery] = useState("");
+  const [filteredList, setFilteredList] = useState([]);
+  useEffect(() => {
+    if (query !== "") {
+      let newArray = itemList.filter((item) => item.plantName.includes(query));
+      setFilteredList([...newArray]);
+    } else {
+      setFilteredList([]);
+    }
+  }, [query]);
   return (
     <div className="search-container">
       <div className="search-header">
         <input
           className="search-style"
-          onChange={filterBySearch}
+          onChange={(e) => setQuery(e.target.value)}
           placeholder=".. ابحث عن النبتة "
         />
       </div>
-      <div id="item-list">
-        {filteredList.map((item, index) => (
-          <div key={index}>
-            <p>{item}</p>
-          </div>
-        ))}
-      </div>
+      {filteredList ? (
+        <div id="item-list" >
+          {filteredList.map((item, index) => (
+            <Link to={`/Details/${item?.idPlant}`}>
+              <div key={index}>
+                <p>{item?.plantName}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      ) : null}
+      
+      
     </div>
   );
 }

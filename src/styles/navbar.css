@@ -7,42 +7,9 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 0.1rem 5rem;
-
-}
-
-/* .btn-sup {
-  background-color: #D87945;
   height: 3rem;
-  width: 10rem;
-  color: #0D0D0D;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.btn-sup:hover{
-  background-color: #ED9360;
-} */
-/* .btn-lg {
-  height: 3rem;
-  width: 10rem;
-  color: #0D0D0D;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  border-radius: 1rem;
-  border: 1px solid #D87945;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.btn-lg:hover{
-  background-color: #ffffff;
 
-} */
 .linkClass {
   color: #0D0D0D;
   width: fit-content;

@@ -1,6 +1,5 @@
 .hero {
   background-image: url('/src/assets/heroPhoto2.jpg');
-  /* 50% no-repeat */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -9,13 +8,6 @@
   width: 100vw;
   text-align: center;
   color: #fff;
-  /* display: -webkit-flex;
-  display: -ms-flexbox;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  justify-content: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center   */
 }
 
 .hero-content {

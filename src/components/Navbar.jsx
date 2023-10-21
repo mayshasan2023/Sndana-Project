@@ -7,20 +7,13 @@ const Navbar = () => {
   return (
     <div>
       <nav id="desktop-nav" className="navContainer">
-        {/* <button type="button" className="btn-sup">
-          انشاء حساب
-        </button>
-        <button type="button" className="btn-lg">
-          تسجيل الدخول
-        </button> */}
         <Link className="linkClass" to="/">
-          {" "}
           الرئيسية
         </Link>
         <Link className="linkClass" to="/Favorites">
-          {" "}
           المفضلات
         </Link>
+        
         <a href="#Footer" className="linkClass">
           تواصل معنا
         </a>
@@ -46,22 +39,12 @@ const Navbar = () => {
                 الرئيسية
               </Link>
             </li>
-            <li>
-              <Link className="linkClass" to="/Favorites">
-                المفضلات
-              </Link>
-            </li>
+            
             <li>
               <a href="#Footer" className="linkClass">
                 تواصل معنا
               </a>
             </li>
-            {/* <button type="button" className="btn-sup">
-              انشاء حساب
-            </button>
-            <button type="button" className="btn-lg">
-              تسجيل الدخول
-            </button> */}
           </div>
         </div>
       </nav>
