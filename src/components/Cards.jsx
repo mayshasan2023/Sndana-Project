@@ -4,15 +4,12 @@ import "../styles/button.css";
 import view from "../assets/view.png";
 import { Link } from "react-router-dom";
 import Alarm from "./Alarm";
-import HeartButton from "./HeartButton";
-
 export const Cards = ({ imgSrc, imgAlt, title, id }) => {
   return (
     <div className="card-container">
       {imgSrc && imgAlt && (
         <img src={imgSrc} alt={imgAlt} className="cardImg" />
       )}
-      <HeartButton />
 
       {title && <h3 className="card-title">{title}</h3>}
 

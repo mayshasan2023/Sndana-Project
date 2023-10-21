@@ -10,10 +10,7 @@ const Navbar = () => {
         <Link className="linkClass" to="/">
           الرئيسية
         </Link>
-        <Link className="linkClass" to="/Favorites">
-          المفضلات
-        </Link>
-        
+    
         <a href="#Footer" className="linkClass">
           تواصل معنا
         </a>
